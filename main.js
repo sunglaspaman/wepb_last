@@ -52,7 +52,7 @@ for (let i = 0; i < 6; i++) {
 
 //test
 
-
+let cnt = 0;
 
 
 let ballAt;
@@ -63,6 +63,12 @@ function check() {
             ballAt = document.getElementById(`ball${i + 1}`);
             ballAt.src = pb;
             alert("good");
+            cnt++;
+            console.log(cnt);
+        }
+        if (cnt == 6) {
+            alert("congratulations");
+            cnt++;
         }
     }
 }
